@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Meta Tags I have to include-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title></title>
+  <meta name="author" content="Benjamin Civitico">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+
+  <!-- Bootstrap 4.0 CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Icon Pack -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro|Slabo+27px" rel="stylesheet">
+
+  <!-- Google Analytics-->
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
+  _gaq.push(['_trackPageview']);
+  (function()
+  {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+
+  <style type="text/css">
+  h1, h2, h3, h4, h5{
+    font-family: 'Slabo 27px', sans-serif;
+  }
+  p{
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  a{
+    color: #7a828a;
+  }
+  a:hover{
+    text-decoration: underline;
+    color: #7a828a;
+  }
+
+  #header{
+    height: 60vh;
+  }
+
+  #contentLink{
+    color: #7a828a;
+  }
+
+  #contentLink:hover{
+    text-decoration: underline;
+    color: #7a828a;
+  }
+
+  .social-icon{
+    padding:1rem 1rem 1px 1rem;
+    border-bottom: 2px solid white;
+  }
+  .social-icon:hover{
+    border-bottom: dashed 2px #7a828a; 
+  }
+  </style>
+
+</head>
+<body>
+
+  <div id="header" class="container-fluid d-flex flex-column justify-content-center">
+    <div class="container-fluid d-flex flex-column">
+      <h1 class="display-4">Benjamin Civitico</h1>
+      <h1><small class="text-muted">A software developer living in Sydney, Australia</small></h1>
+      <p id="social"> <a href="https://github.com/BenjaminCivitico"><img class="social-icon" src="images/iconmonstr-github-1-24.png"></a> | <a href="https://www.freecodecamp.org/benjamincivitico"><img class="social-icon" src="images/iconmonstr-weather-92-24.png"></a> | <a href="https://twitter.com/BCivitico"><img class="social-icon" src="images/iconmonstr-twitter-1-24.png"></a> | <a href="mailto:benjamincivitico+website@gmail.com"><img class="social-icon" src="images/iconmonstr-email-12-24.png"></a></p>
+    </div>
+  </div>
+
+  <div id="footer" class="container-fluid">
+    <hr>
+    <div id="folio" class="container">
+      <div class="row justify-content-center ">
+        <div class="col-sm-3">
+          <h3><u>Folio</u></h3>
+            <a id="contentLink" href="http://sharepoint.civitico.com" class="">
+                <h5>SharePoint Notes</h4>
+              </a>
+                <p>A site I created to keep track of my SharePoint notes</p>
+        </div>
+
+        <div class="col-sm-3">
+          <h3><u>FCC</u></h3>
+          <a id="contentLink" href="#" class="">
+                <h5>Tribute Page</h4>
+              </a>
+                <p>A tribute page created as part of the Free Code Camp projects</p>
+        </div>
+
+        <div class="col-sm-3">
+          <h3><u>Blog</u></h3>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer container-fluid">
+    <hr>
+    <p class="text-center">Written and coded by <a href="http://benjamin.civitico.com">Benjamin Civitico</a></p>
+  </div>
+</body>
+</html>
