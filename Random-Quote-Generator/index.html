@@ -16,7 +16,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <!-- JQuery -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Open+Sans|Source+Sans+Pro" rel="stylesheet">
@@ -66,7 +66,7 @@
   }
 
   function newQuote(){
-    $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=&"+ new Date().getTime(), function(a) {
+    $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=&"+ new Date().getTime(), function(a) {
       $("#quote").html(a[0].content + "<p>— " + a[0].title + "</p>");
       tweetBtn(a[0].content.length < 100 ? a[0].content.substring(3, a[0].content.length-5) : a[0].content.substring(0,100), a[0].title);
     });
