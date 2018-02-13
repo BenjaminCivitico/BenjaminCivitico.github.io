@@ -50,7 +50,6 @@
 
     function getWeather(position) {
       $.getJSON("https://fcc-weather-api.glitch.me/api/current?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude, function(a){
-        console.log(a);
         temperature = a.main.temp;
         setIcon(a.weather[0].icon);
         $("#weatherLocation").html("Weather for: " + a.name);
