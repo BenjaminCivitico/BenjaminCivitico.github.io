@@ -48,7 +48,7 @@
   function searchWikipedia(){
     $('#searchFeedback').html("Loading...");
     if ($("#searchInput").length > 0) {
-      $.getJSON("https://en.wikipedia.org/w/api.php?action=opensearch&search=" + $("#searchInput").val() + "&format=json&formatversion=2&"+ new Date().getTime(), function() {
+      $.getJSON("https://en.wikipedia.org/w/api.php?action=opensearch&search=" + $("#searchInput").val() + "&format=json&origin=*&formatversion=2&"+ new Date().getTime(), function() {
       })
       .done(function(data){
         $('#searchResultsList').html("");
