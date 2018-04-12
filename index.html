@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <!--Meta Tags I have to include-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Benjamin Civitico - Free Code Camp Portfolio</title>
+  <title>Benjamin Civitico - Portfolio</title>
   <meta name="author" content="Benjamin Civitico">
   <meta name="description" content="The Portfolio page created by Benjamin Civitico for Free Code Camp. Contains links to projects completed as part of the Free Code Camp Course, as well as links to other content he has made.">
   <meta name="keywords" content="FCC,Free,Code,Camp,Portfolio,Benjamin,Civitico,Work,JavaScript,JS,HTML,CSS,HTML5,CSS3,JQuery,Project">
   <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
   
   <!-- JQuery -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
 
   <!-- Bootstrap 4.0 CDN -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
+  <script src="scripts/bootstrap/js/bootstrap.min.js"></script>
 
   <!-- Icon Pack -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style/iconic/open-iconic-bootstrap.min.css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro|Slabo+27px" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
   <!-- Google Analytics-->
-  <script type="text/javascript">
+  <script>
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-106967798-3']);
   _gaq.push(['_trackPageview']);
@@ -37,7 +38,7 @@
   })();
   </script>
 
-  <style type="text/css">
+  <style>
   h1, h2, h3, h4, h5{
     font-family: 'Slabo 27px', sans-serif;
   }
@@ -57,7 +58,7 @@
     height: 60vh;
   }
 
-  #contentLink{
+  .contentLink{
     color: #7a828a;
   }
 
@@ -76,52 +77,53 @@
   </style>
 
 </head>
+
 <body>
 
   <div id="header" class="container-fluid d-flex flex-column justify-content-center">
     <div class="container-fluid d-flex flex-column">
       <h1 class="display-4">Benjamin Civitico</h1>
       <h1><small class="text-muted">A software developer living in Sydney, Australia</small></h1>
-      <p id="social"> <a href="https://github.com/BenjaminCivitico"><img class="social-icon" src="images/iconmonstr-github-1-24.png"></a> | <a href="https://www.freecodecamp.org/benjamincivitico"><img class="social-icon" src="images/iconmonstr-weather-92-24.png"></a> | <a href="https://twitter.com/BCivitico"><img class="social-icon" src="images/iconmonstr-twitter-1-24.png"></a> | <a href="mailto:benjamincivitico+website@gmail.com"><img class="social-icon" src="images/iconmonstr-email-12-24.png"></a></p>
+      <p id="social"> <a href="https://github.com/BenjaminCivitico"><img class="social-icon" src="images/iconmonstr-github-1-24.png" alt="GitHub Icon"></a> | <a href="https://www.freecodecamp.org/benjamincivitico"><img class="social-icon" src="images/iconmonstr-weather-92-24.png" alt="Free Code Camp Icon"></a> | <a href="https://twitter.com/BCivitico"><img class="social-icon" src="images/iconmonstr-twitter-1-24.png" alt="Twitter Icon"></a> | <a href="mailto:benjamincivitico+website@gmail.com"><img class="social-icon" src="images/iconmonstr-email-12-24.png" alt="Email Icon"></a></p>
     </div>
   </div>
 
   <div id="footer" class="container-fluid">
     <hr>
     <div id="folio" class="container">
-      <div class="row justify-content-center ">
+      <div class="row justify-content-center">
         <div class="col-sm-3">
           <h3><u>Folio</u></h3>
-          <a id="contentLink" href="http://sharepoint.civitico.com" class="">
-            <h5>SharePoint Notes</h4>
+          <a href="http://sharepoint.civitico.com" class="contentLink">
+            <h5>SharePoint Notes</h5>
             </a>
             <p>A site I created to keep track of my SharePoint notes</p>
           </div>
 
           <div class="col-sm-3">
             <h3><u>FCC</u></h3>
-            <a id="contentLink" href="./Tribute-Page" class="">
-              <h5>Tribute Page</h4>
+            <a href="./Tribute-Page" class="contentLink">
+              <h5>Tribute Page</h5>
               </a>
               <p>A tribute page created as part of the Free Code Camp projects. I created this page based off of australian of the year Professor Michelle Yvonne Simmons</p>
-            <a id="contentLink" href="#" class="">
-                <h5>Portfolio Site</h4>
+            <a href="#" class="contentLink">
+                <h5>Portfolio Site</h5>
               </a>
                 <p>This site was created as the second project for Free Code Camp</p>
-            <a id="contentLink" href="./Random-Quote-Generator" class="">
-                <h5>Random Quote Generator</h4>
+            <a href="./Random-Quote-Generator" class="contentLink">
+                <h5>Random Quote Generator</h5>
               </a>
                 <p>A page that lets you tweet a random quote. Uses the <a href="http://quotesondesign.com/">http://quotesondesign.com/</a> API</p>
-              <a id="contentLink" href="./Weather-App" class="">
-                <h5>Weather App</h4>
+              <a href="./Weather-App" class="contentLink">
+                <h5>Weather App</h5>
               </a>
                 <p>Displays the current temperatre at the users location. Uses the <a href="https://fcc-weather-api.glitch.me">https://fcc-weather-api.glitch.me</a> API</p>
             </div>
 
             <div class="col-sm-3">
               <h3><u>Blog</u></h3>
-              <a id="contentLink" href="https://medium.com/@Cuddle_a/my-experience-with-the-microsoft-70-480-exam-programming-in-html5-with-javascript-css3-afe101ad761a" class="">
-              <h5>The Microsoft 70-480 Exam</h4>
+              <a href="https://medium.com/@Cuddle_a/my-experience-with-the-microsoft-70-480-exam-programming-in-html5-with-javascript-css3-afe101ad761a" class="contentLink">
+              <h5>The Microsoft 70-480 Exam</h5>
               </a>
               <p>My experiences, and prep going into the Microsoft 70-480 Programming in HTML5 with JavaScript & CSS3</p>
             </div>
@@ -129,9 +131,21 @@
           </div>
         </div>
       </div>
+
+
       <div class="footer container-fluid">
         <hr>
-        <p class="text-center">Written and coded by <a href="https://benjamincivitico.github.io">Benjamin Civitico</a></p>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 d-flex justify-content-center">
+              <p class="text-center">Written and coded by <a href="http://benjamin.civitico.com">Benjamin Civitico</a></p>
+            </div>
+            <div class="col-sm-3 text-sm-right text-md-right text-lg-right text-xl-right text-center p-2">
+              <a href="https://www.youracclaim.com/badges/0bfaddbf-b3c2-4a6b-adfc-823c620ffd8f/public_url"><img height="24px" width="24px" src="images/Programming+in+HTML5+with+JavaScript+and+Css3-01.png" alt="MS70-480 Passed"></a>
+            </div>
+          </div>
+        </div>
       </div>
     </body>
     </html>
